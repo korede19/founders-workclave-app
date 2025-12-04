@@ -39,6 +39,47 @@
   margin-bottom: 26px;
   cursor: pointer;
 }
+.dividerAlt {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.dividerAlt::before,
+.dividerAlt::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #2d2d4d;
+}
+
+.dividerAlt > span {
+  font-family: "TestCalibre", sans-serif;
+  font-weight: 900;
+  padding: 0px 16px;
+  color: #a6abe8;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 8%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #17172d;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
   .contain {

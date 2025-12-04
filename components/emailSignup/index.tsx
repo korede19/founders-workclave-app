@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import Link from "next/link";
 import styles from "./styles.module.css";
 import TestimonialSlider from "../testimonialSlider";
 import Back from "@/svgs/back";
 import { useRouter } from "next/navigation";
 import { SignupFormData } from "@/utils/data";
 import SignupFormAgency from "../signupFormAgency";
+import Google from "@/svgs/google";
 
 const EmailSignupComp = () => {
   const router = useRouter();
@@ -23,6 +24,15 @@ const EmailSignupComp = () => {
             <Back /> Back
           </button>
           <SignupFormAgency userType="agency" onSubmit={handleSignup} />
+          <div className={styles.dividerAlt}>
+            <span>OR</span>
+          </div>
+          <div className={styles.loginBtn}>
+            <Link href="#" className={styles.actionBtn}>
+              <Google />
+              Continue with Google
+            </Link>
+          </div>
         </div>
       </div>
     </div>

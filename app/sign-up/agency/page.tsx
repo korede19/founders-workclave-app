@@ -1,10 +1,9 @@
-import LoginComp from "@/components/loginComp";
-import React from "react";
+import EmailSignupComp from "@/components/emailSignup";
 
 const Login = () => {
   return (
     <div>
-      <LoginComp />
+      <EmailSignupComp />
     </div>
   );
 };

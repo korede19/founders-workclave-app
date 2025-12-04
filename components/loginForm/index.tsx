@@ -4,8 +4,6 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import ShowPassword from "@/svgs/showPassword";
 import Google from "@/svgs/google";
-import Facebook from "@/svgs/facebook";
-import Ios from "@/svgs/ios";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -93,14 +91,6 @@ const LoginForm = () => {
           <Link href="#" className={styles.actionBtn}>
             <Google />
             Continue with Google
-          </Link>
-          <Link href="#" className={styles.actionBtn}>
-            <Facebook />
-            Continue with Facebook
-          </Link>
-          <Link href="#" className={styles.actionBtn}>
-            <Ios />
-            Continue with Apple
           </Link>
         </div>
         <div className={styles.signupText}>

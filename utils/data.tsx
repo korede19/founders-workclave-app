@@ -1,3 +1,12 @@
+import Dashboard from "@/svgs/dashboard";
+import Logout from "@/svgs/logout";
+import Messages from "@/svgs/messages";
+import Payments from "@/svgs/payments";
+import Prd from "@/svgs/prd";
+import Projects from "@/svgs/projects";
+import Settings from "@/svgs/settings";
+import Wallets from "@/svgs/wallets";
+
 interface Testimonial {
   id: number;
   quote: string;
@@ -46,3 +55,46 @@ export interface SignupFormData {
   password: string;
   agreedToTerms: boolean;
 }
+
+export const founderMenuItems = [
+  {
+    icon: <Dashboard />,
+    label: "Dashboard",
+    link: "/",
+  },
+  {
+    icon: <Prd />,
+    label: "My PRDs",
+    link: "/",
+  },
+  {
+    icon: <Projects />,
+    label: "My Projects",
+    link: "/",
+  },
+  {
+    icon: <Messages />,
+    label: "Messages",
+    link: "/",
+  },
+  {
+    icon: <Wallets />,
+    label: "Wallet",
+    link: "/",
+  },
+  {
+    icon: <Payments />,
+    label: "Payments",
+    link: "/",
+  },
+  {
+    icon: <Settings />,
+    label: "Settings",
+    link: "/",
+  },
+  {
+    icon: <Logout />,
+    label: "",
+    link: "/login",
+  },
+];
